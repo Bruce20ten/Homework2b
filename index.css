@@ -1,8 +1,15 @@
 * {
 	margin: 0 auto;
-	background-color: blue;
+	width: 0 auto;
 }
 
+body {
+	background-image: url("converse.jpg");
+	background-size: cover;
+	background-position: fixed;
+	background-color: red;
+	background-blend-mode: screen;
+}
 
 .navbar {
     background-color: slategrey;
@@ -42,34 +49,57 @@
 
 
 .close {
-	color: white;
-	/*position: absolute;
-	top: 5px;
-	left: 100px;*/
+	color: solid black;
 	background-color: solid black;
+	float: right;
 
 }
 
 #box {
 	width: 500px;
 	height: 500px;
-	background-color: yellow;
 	display: none;
-	transform: opacity 50%;
-	animation: coloring 10s;
+	background-image: url("philly.jpg");
+	background-position: center;
+	font-size: 60px;
+	color: white;
+	opacity: 0.8;
 
 }
 
-@keyframes coloring{
-	0% {
-		background-color: green;
+@media all and (max-width: 480px){
+	
+	#box {
+		width: 70%;
+		margin: 50px auto;
+	}
+	
+	.navbar.responsive {position: relative;}
+  	.navbar.responsive a.icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+	
+}
+
+@media all and (min-width: 481px) and (max-width: 767px){
+	
+	#box {
+		width: 70%;
+		margin: 50px auto;
+	}
+	
+
+}
+
+@media all and (min-width: 768px) and (max-width: 992px){
+
 		
-	}
-	/*50% {
-		background-color: blue;
-	}*/
-	100% {
-		background-color: yellow;
-	}
 }
-
