@@ -1,0 +1,75 @@
+* {
+	margin: 0 auto;
+	background-color: blue;
+}
+
+
+.navbar {
+    background-color: slategrey;
+    overflow: hidden;
+ }
+
+ .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+ }
+
+ .navbar a:hover {
+    background-color: lightgrey;
+    color: black;
+ }
+
+ .active {
+    background-color: maroon;
+    color: white;
+
+ }
+
+
+.wrapper {
+	width: 800px;
+	margin: 50px auto;
+	overflow: hidden;
+	background-position: center;
+
+}
+
+
+.close {
+	color: white;
+	/*position: absolute;
+	top: 5px;
+	left: 100px;*/
+	background-color: solid black;
+
+}
+
+#box {
+	width: 500px;
+	height: 500px;
+	background-color: yellow;
+	display: none;
+	transform: opacity 50%;
+	animation: coloring 10s;
+
+}
+
+@keyframes coloring{
+	0% {
+		background-color: green;
+		
+	}
+	/*50% {
+		background-color: blue;
+	}*/
+	100% {
+		background-color: yellow;
+	}
+}
+
